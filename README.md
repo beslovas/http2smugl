@@ -1,3 +1,20 @@
+This a fork of [neex/http2smugl](https://github.com/neex/http2smugl)
+
+Whats changed:
+
+* version of package `lucas-clemente/quic-go` updated from `v0.24.0` to `v0.25.0`, which has added support for Go 1.18
+
+
+# Installation
+
+```
+git clone https://github.com/beslovas/http2smugl.git
+cd http2smugl
+go get
+go build
+```
+
+
 # http2smugl
 
 This tool helps to detect and exploit HTTP request smuggling in cases it can be achieved via HTTP/2 -> HTTP/1.1 conversion by the frontend server.
@@ -110,8 +127,6 @@ Similarly, we can search for a backend that will convert the value of `Transfer-
 Of course, it is required that the frontend will pass UTF-8 header names/values to the backend.
 
 ## Usage
-
-To install the tool, run `go get github.com/neex/http2smugl`.
 
 The tool contains two subcommands: `request` and `detect`. The first one is just for crafting HTTP/2 requests: most client tools do not accept invalid headers, so it's handy to have one that sends user input to the server as-is.
 

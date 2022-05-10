@@ -3,7 +3,7 @@ module github.com/neex/http2smugl
 go 1.17
 
 require (
-	github.com/lucas-clemente/quic-go v0.24.0
+	github.com/lucas-clemente/quic-go v0.25.0
 	github.com/marten-seemann/qpack v0.2.1
 	github.com/spf13/cobra v1.2.1
 	golang.org/x/net v0.0.0-20211104170005-ce137452f963
@@ -16,6 +16,7 @@ require (
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
 	github.com/marten-seemann/qtls-go1-16 v0.1.4 // indirect
 	github.com/marten-seemann/qtls-go1-17 v0.1.0 // indirect
+	github.com/marten-seemann/qtls-go1-18 v0.1.0-beta.1 // indirect
 	github.com/nxadm/tail v1.4.8 // indirect
 	github.com/onsi/ginkgo v1.16.4 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
